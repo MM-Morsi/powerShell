@@ -1,0 +1,26 @@
+FUNCTIONS
+* accessed the same way you access cmdlets 
+* You can create your own functions 
+* a function can make more than one thing (cmdlets are one thing ??? mesh mot2kd)
+____________________________________________
+ADDING 2 NUMBERS 
+function add
+{
+$add = [int](2+2)
+Write-Output "$add"
+}
+
+using: 
+add
+4
+____________________________________________
+-whatif & -confirm 
+-------------------
+Use this for testing 
+
+SHOWS YOU WHAT WILL HAPPEN IF I RUN THIS COMMAND
+* Get-Service | Stop-Service -WhatIf
+DON'T USE THIS 
+* Get-Service | Stop-Service -confirm
+-- asks you are you sure you want to do this (for each service)
+____________________________________________
