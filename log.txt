@@ -1,0 +1,25 @@
+Administrative privileges are important 
+.bat files 
+windows server fundamentals 
+_____________________________
+not just a scripting environment
+it's also a language 
+_____________________________
+object oriented 
+automation and bulk operations 
+_____________________________
+based on .NET --> good for programmers 
+_____________________________
+built-in providers 
+* interactive shell 
+_____________________________
+using aliases 
+* using other languages 
+* Get-ChildItem == dir == ls 
+_____________________________
+reading the language
+-- command 
+* get-service 
+-- parameter 
+* - name
+* "*net"
