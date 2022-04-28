@@ -82,8 +82,42 @@ get-help
 * get-help get-service -full
     * detailed 
     * gives links to related topics 
+
+Some help can lead to other help files like:
+get-help get-childitem -full
+leads to: 
+get-help about_Aliases
 _____________________________
 get-command 
 * gives commands "on the system"
-* you can download stuff 
-* 
+* you can download more commands 
+_____________________________
+aliases
+* dir == ls == gci == get-childitem
+* get-help == gh
+* create your own aliases 
+* find aliases for a command
+
+Example 
+get-help get-childitem -full
+* notes section 
+    - `Get-ChildItem` can be run using any of the built-in aliases, `ls`, `dir`, and `gci`. For more   information, see about_Aliases
+* Get-Help about_Aliases
+_____________________________
+get-service 
+* you can find this accorss servers
+* you have 3 parameters / propoerties come back
+status name displayname 
+
+EXAMPLE
+Get-Service | Where-Object {$_.Status -eq "stopped"}
+-- return all services where the status parameter equals stopped 
+
+Get-Service | Get-Member    
+* gives back all the properties you can get from the get-service command 
+* not just status and name and displayName 
+* can give you methods - properties - alias properties (name == serviceName)
+* methods are very helpful 
+_____________________________
+
+
