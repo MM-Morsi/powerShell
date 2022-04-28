@@ -17,9 +17,47 @@ using aliases
 * using other languages 
 * Get-ChildItem == dir == ls 
 _____________________________
-reading the language
--- command 
+-- command (commandlet) 
 * get-service 
+    verb-noun 
+
 -- parameter 
-* - name
+* -name
 * "*net"
+    argument string
+
+OUPUT
+property names - property values 
+_____________________________
+EXAMPLE
+get-service -name "*net*"
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  Netlogon           Netlogon
+Stopped  Netman             Network Connections
+Running  netprofm           Network List Service
+Stopped  NetSetupSvc        Network Setup Service
+Stopped  NetTcpPortSharing  Net.Tcp Port Sharing Service
+Stopped  SolidWorks Flex... SolidWorks Flexnet Server
+Stopped  WMPNetworkSvc      Windows Media Player Network Sharin...
+Stopped  XboxNetApiSvc      Xbox Live Networking Service
+_____________________________
+powerShell is case insensitive 
+* some objects and parameters are case sensitive
+,ost commandlets are singluar 
+_____________________________
+Pipe symbol "|"
+* output >> next command
+* string commands in one line
+* parameter binding 
+    * like -name and "a string value"
+    * gets bounded to the object 
+    * pass parameters to the next command 
+* can used to output file 
+    * get-service | out-file c:\services.txt
+_____________________________
+EXAMPLE
+C:\Users\moham\Documents\Web\powerShell> get-service | Out-File servicesFile.txt
+
+
