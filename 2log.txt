@@ -24,3 +24,7 @@ DON'T USE THIS
 * Get-Service | Stop-Service -confirm
 -- asks you are you sure you want to do this (for each service)
 ____________________________________________
+ISE & You
+* GUI 
+* write scripts ____.ps1
+* intellisense (automatically fill and provide recommendations for commandlets and parameters)
