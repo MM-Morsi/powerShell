@@ -28,3 +28,9 @@ ISE & You
 * GUI 
 * write scripts ____.ps1
 * intellisense (automatically fill and provide recommendations for commandlets and parameters)
+* commands tab 
+    * you can even choose the command and put parameters in gui / text boxes / check boxes ... etc.
+    * generate commands 
+* new remote powershell tab 
+    * establish a remote session with a remote computer 
+    * run the scripts on the remote system 
