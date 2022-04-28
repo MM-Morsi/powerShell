@@ -26,7 +26,7 @@ _____________________________
 * "*net"
     argument string
 
-OUPUT
+OUTPUT
 property names - property values 
 _____________________________
 EXAMPLE
@@ -56,8 +56,34 @@ Pipe symbol "|"
     * pass parameters to the next command 
 * can used to output file 
     * get-service | out-file c:\services.txt
-_____________________________
+_____________________________`
 EXAMPLE
 C:\Users\moham\Documents\Web\powerShell> get-service | Out-File servicesFile.txt
+_____________________________
+run vs code as administrator --> ps shell as administrator 
+* check if you have administrator privileges 
+* [Security.Principal.WindowsIdentity]::GetCurrent().Groups -contains 'S-1-5-32-544'
 
-
+[Security.Principal.WindowsIdentity]::GetCurrent() - Retrieves the WindowsIdentity for the currently running user.
+(...).groups - Access the groups property of the identity to find out what user groups the identity is a member of.
+-contains "S-1-5-32-544" returns true if groups contains the Well Known SID of the Administrators group (the identity will only contain it if “run as administrator” was used) and otherwise false.
+_____________________________
+get-help 
+* you can update the help files --> update-help
+* get-help get-service 
+    getting help for the command get-service 
+* get-help get-service -examples
+    * you must have an update-help command run before this 
+* get-Help Get-Service -Online
+    * this opens the webpage 
+* get-help get-service -detailed 
+    * gives examples 
+    * gives more information we can provide 
+* get-help get-service -full
+    * detailed 
+    * gives links to related topics 
+_____________________________
+get-command 
+* gives commands "on the system"
+* you can download stuff 
+* 
